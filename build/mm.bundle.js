@@ -11237,12 +11237,12 @@ angular.module('mm.core.login', [])
             $ionicHistory.clearHistory();
         }] 
     }) 
-   /* .state('mm_login.init', {
+   	.state('mm_login.init', {
         url: '/init',
         templateUrl: 'core/components/login/templates/init.html',
         controller: 'mmLoginInitCtrl',
         cache: false 
-    }) */
+    }) 
     .state('mm_login.sites', {
         url: '/sites',
         templateUrl: 'core/components/login/templates/sites.html',
@@ -11271,11 +11271,11 @@ angular.module('mm.core.login', [])
             urltoopen: '', 
             siteconfig: null
         },
-      /*  onEnter: ["$state", "$stateParams", function($state, $stateParams) {
+        onEnter: ["$state", "$stateParams", function($state, $stateParams) {
             if (!$stateParams.siteurl) {
               $state.go('mm_login.init');
             }
-        }] */
+        }] 
     })
 	.state('mm_login.reconnect', {
         url: '/reconnect',
