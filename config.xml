@@ -3,7 +3,7 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
         id        = "com.iut.iutonline"
-        versionCode = "20181"
+        versionCode = "2017"
         version   = "3.3.1">
     <name>IUT Online</name>
 
