@@ -11228,22 +11228,18 @@ angular.module('mm.core.login', [])
 .constant('mmCoreLoginSiteUncheckedEvent', 'mm_login_site_unchecked')
 .config(["$stateProvider", "$urlRouterProvider", "$mmInitDelegateProvider", "mmInitDelegateMaxAddonPriority", function($stateProvider, $urlRouterProvider, $mmInitDelegateProvider, mmInitDelegateMaxAddonPriority) {
     $stateProvider
-    .state('mm_login', {
+   /* .state('mm_login', {
         url: '/mm_login',
         abstract: true,
         templateUrl: 'core/components/login/templates/base.html',
         cache: false,   
         onEnter: ["$ionicHistory", function($ionicHistory) {
             $ionicHistory.clearHistory();
-        }]
-    })
-    .state('mm_login.init', {
-        url: '/init',
-        templateUrl: 'core/components/login/templates/init.html',
-        controller: 'mmLoginInitCtrl',
-        cache: false 
-    })
-    .state('mm_login.sites', {
+        }] 
+    }) */
+    
+	
+   /* .state('mm_login.sites', {
         url: '/sites',
         templateUrl: 'core/components/login/templates/sites.html',
         controller: 'mmLoginSitesCtrl',
@@ -11252,7 +11248,7 @@ angular.module('mm.core.login', [])
                 $mmLoginHelper.goToAddSite();
             });
         }]
-    })
+    }) */
     .state('mm_login.site', {
         url: '/site',
         templateUrl: 'core/components/login/templates/site.html',
@@ -11276,6 +11272,12 @@ angular.module('mm.core.login', [])
               $state.go('mm_login.init');
             }
         }]
+    })
+	.state('mm_login.init', {
+        url: '/init',
+        templateUrl: 'core/components/login/templates/init.html',
+        controller: 'mmLoginInitCtrl',
+        cache: false 
     })
     .state('mm_login.reconnect', {
         url: '/reconnect',
