@@ -11237,7 +11237,12 @@ angular.module('mm.core.login', [])
             $ionicHistory.clearHistory();
         }] 
     }) 
-    /*	
+    .state('mm_login.init', {
+        url: '/init',
+        templateUrl: 'core/components/login/templates/init.html',
+        controller: 'mmLoginInitCtrl',
+        cache: false 
+    })
     .state('mm_login.sites', {
         url: '/sites',
         templateUrl: 'core/components/login/templates/sites.html',
@@ -11247,7 +11252,7 @@ angular.module('mm.core.login', [])
                 $mmLoginHelper.goToAddSite();
             });
         }]
-    }) */
+    }) 
     .state('mm_login.site', {
         url: '/site',
         templateUrl: 'core/components/login/templates/site.html',
@@ -11272,13 +11277,7 @@ angular.module('mm.core.login', [])
             }
         }]
     })
-	.state('mm_login.init', {
-        url: '/init',
-        templateUrl: 'core/components/login/templates/init.html',
-        controller: 'mmLoginInitCtrl',
-        cache: false 
-    })
-    .state('mm_login.reconnect', {
+	.state('mm_login.reconnect', {
         url: '/reconnect',
         templateUrl: 'core/components/login/templates/reconnect.html',
         controller: 'mmLoginReconnectCtrl',
