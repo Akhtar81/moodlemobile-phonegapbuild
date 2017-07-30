@@ -11235,8 +11235,8 @@ angular.module('mm.core.login', [])
         cache: false,   
         onEnter: ["$ionicHistory", function($ionicHistory) {
             $ionicHistory.clearHistory();
-        }] 
-    }) 
+        }]
+    })
     .state('mm_login.init', {
         url: '/init',
         templateUrl: 'core/components/login/templates/init.html',
@@ -11252,14 +11252,11 @@ angular.module('mm.core.login', [])
                 $mmLoginHelper.goToAddSite();
             });
         }]
-    }) 
+    })
     .state('mm_login.site', {
         url: '/site',
         templateUrl: 'core/components/login/templates/site.html',
-        controller: 'mmLoginSiteCtrl',
-		onEnter: function($state){
-			$state.go('mm_login.credentials',{siteurl:'https://www.akhtarbd.net/iutonline'});
-		}
+        controller: 'mmLoginSiteCtrl'
     })
     .state('mm_login.credentials', {
         url: '/cred',
@@ -11277,7 +11274,7 @@ angular.module('mm.core.login', [])
             }
         }]
     })
-	.state('mm_login.reconnect', {
+    .state('mm_login.reconnect', {
         url: '/reconnect',
         templateUrl: 'core/components/login/templates/reconnect.html',
         controller: 'mmLoginReconnectCtrl',
