@@ -11228,7 +11228,7 @@ angular.module('mm.core.login', [])
 .constant('mmCoreLoginSiteUncheckedEvent', 'mm_login_site_unchecked')
 .config(["$stateProvider", "$urlRouterProvider", "$mmInitDelegateProvider", "mmInitDelegateMaxAddonPriority", function($stateProvider, $urlRouterProvider, $mmInitDelegateProvider, mmInitDelegateMaxAddonPriority) {
     $stateProvider
-   /* .state('mm_login', {
+    .state('mm_login', {
         url: '/mm_login',
         abstract: true,
         templateUrl: 'core/components/login/templates/base.html',
@@ -11236,10 +11236,9 @@ angular.module('mm.core.login', [])
         onEnter: ["$ionicHistory", function($ionicHistory) {
             $ionicHistory.clearHistory();
         }] 
-    }) */
-    
-	
-   /* .state('mm_login.sites', {
+    }) 
+    /*	
+    .state('mm_login.sites', {
         url: '/sites',
         templateUrl: 'core/components/login/templates/sites.html',
         controller: 'mmLoginSitesCtrl',
