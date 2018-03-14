@@ -603,7 +603,7 @@
     "mm.login.problemconnectingerrorcontinue": "Double check you've entered the address correctly and try again.",
     "mm.login.profileinvaliddata": "Invalid value",
     "mm.login.recaptchachallengeimage": "reCAPTCHA challenge image",
-    "mm.login.reconnect": "Reconnect",
+    "mm.login.reconnect": "Reconnect to IUTOnline",
     "mm.login.reconnectdescription": "Your authentication token is invalid or has expired, you have to reconnect to the site.",
     "mm.login.reconnectssodescription": "Your authentication token is invalid or has expired, you have to reconnect to the site. You need to log in to the site in a browser window.",
     "mm.login.security_question": "Security question",
